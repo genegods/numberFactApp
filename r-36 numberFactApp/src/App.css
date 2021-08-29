@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #d1d1d1;
+}
+
+.card{
+    width: 900px;
+    height: auto;
+    background-color: #e0dfe9;
+}
+.card-header{
+    background-color: #3a0c44;
+}
+.card-header h2{
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numberContainer{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    padding: 20px 40px;
+    background-color: #204746;
+    color: whitesmoke;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    outline:none;
+    
+}
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+input:focus, input:active,
+button:focus, button:active{
+    outline: none;
+    border: none;
+}
+
+.searchBtn{
+    position: absolute;
+    right: 46px;
+    bottom: 143px;
+}
+
+input{
+    margin-top: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+}
+.card-body{
+    background-image: url(./asserts/images/background1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.factContainer{
+    width: auto;
+    min-height: 100px;
+    
+}
+.factContainer h6{
+    color: whitesmoke;
+    font-size: 30px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.card-footer{
+    background-color: #2a1e2c; 
+}
